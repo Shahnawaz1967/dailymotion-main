@@ -9,8 +9,12 @@ dotenv.config();
 
 const app = express();
 
+// Updated CORS options to include both local and deployed frontend URLs
 const corsOptions = {
-  origin: 'http://localhost:5173', // Replace with your frontend URL
+  origin: [
+    'http://localhost:5173', // Local development URL
+    'https://dailymotion-main.vercel.app' // Deployed frontend URL
+  ],
   credentials: true,
   optionsSuccessStatus: 200
 };
