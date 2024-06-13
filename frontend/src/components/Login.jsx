@@ -22,7 +22,7 @@ const Login = () => {
         console.log("Attempting to log in with email:", email);
 
         try {
-            const response = await axios.post('http://localhost:8080/api/user/login', { email, password }, { withCredentials: true });
+            const response = await axios.post('https://dailymotion-main.onrender.com/api/user/login', { email, password }, { withCredentials: true });
             console.log("Response received:", response);
 
             if (response.status === 200 && response.data.user) {
@@ -56,7 +56,7 @@ const Login = () => {
 
     const handleLogout = async () => {
         try {
-            await axios.post('http://localhost:8080/api/user/logout', {}, { withCredentials: true });
+            await axios.post('https://dailymotion-main.onrender.com/api/user/logout', {}, { withCredentials: true });
             Cookies.remove('authToken');
             dispatch(clearUser());
             toast.success('Logout successful!');

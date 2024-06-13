@@ -13,7 +13,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/user/register', { name, email, password });
+      const response = await axios.post('https://dailymotion-main.onrender.com/api/user/register', { name, email, password });
       if (response.status === 201) {
         toast.success('Signup successful!');
         navigate('/');
