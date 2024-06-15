@@ -95,7 +95,7 @@ npm run dev
 
 **Link to Dailymotion video**: https://youtu.be/5WcoSdMmv-k
 
-**Web Deployed Link**: https://dailymotion-main.vercel.app/
+** ClientSide Web Deployed Link**: https://dailymotion-main.vercel.app/
 
 **Github repo Link**: https://github.com/Shahnawaz1967/dailymotion-main.git
 
