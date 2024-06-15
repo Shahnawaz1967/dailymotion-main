@@ -42,11 +42,20 @@ const register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
     console.log(name, email, password);
+
+    // Check if user with the same email already exists
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).send({ message: 'User already exists with this email' });
+    }
+
+    // Create a new user
     const user = await User.create({
       name,
       email,
       password,
     });
+
     return res.status(201).send({ message: 'User registered successfully' });
   } catch (error) {
     return res.status(500).send({ message: 'Error registering user', error: error.message });

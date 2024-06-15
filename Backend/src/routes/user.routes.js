@@ -29,6 +29,8 @@ const userRouter = express.Router();
  *     responses:
  *       201:
  *         description: User registered successfully
+ *       400:
+ *         description: User already exists with this email
  *       500:
  *         description: Error registering user
  */
