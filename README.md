@@ -93,7 +93,7 @@ npm run dev
 
 ## ✨`Deployment`
 
-**Link to Dailymotion video**: https://youtu.be/5WcoSdMmv-k
+**Link to Dailymotion video**: https://youtu.be/ZzblsM5Jy3o
 
 ** ClientSide Web Deployed Link**: https://dailymotion-main.vercel.app/
 
