@@ -101,6 +101,8 @@ npm run dev
 
 # backend 
 
+![backendpage](https://github.com/Shahnawaz1967/dailymotion-main/assets/127391541/95368b2f-219c-4537-9071-3e807a5cc9da)
+
 This is a backend application for a dailyMotion project. The backend is built with Node.js, Express, and MongoDB.
 
 ## Table of Contents
@@ -118,8 +120,7 @@ This is a backend application for a dailyMotion project. The backend is built wi
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/jyotipatthak/flipkart-main1
-    cd flipkart-main1/backend
+    git clone https://github.com/Shahnawaz1967/dailymotion-main.git
     ```
 
 2. Install dependencies:
@@ -194,6 +195,9 @@ models/:
 routes/:
   . user.routes.js: Routes for user operations.
 swagger.js: Contains the Swagger configuration for API documentation.
+
+![backend folderstr](https://github.com/Shahnawaz1967/dailymotion-main/assets/127391541/156ad41e-ca1b-4827-bb98-43bd00c5a321)
+
 index.js: Entry point of the application.
 
 ## 🎋 `Individual project`
