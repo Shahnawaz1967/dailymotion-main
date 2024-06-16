@@ -97,6 +97,8 @@ npm run dev
 
 ** ClientSide Web Deployed Link**: https://dailymotion-main.vercel.app/
 
+** ServerSide Web Deployed Link**: https://dailymotion-main.onrender.com/
+
 **Github repo Link**: https://github.com/Shahnawaz1967/dailymotion-main.git
 
 # backend 
@@ -207,4 +209,4 @@ This project is created by
 ##  📚`Feedback`
 
 If you have any feedback, please reach out to us at ashahnawaz010@gmail.com
-#
+
