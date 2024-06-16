@@ -1,7 +1,13 @@
+// Import express library
 import express from 'express';
+
+// Import controller functions for user operations
 import { deleteUser, login, logout, register } from '../controllers/user.controller.js';
+
+// Import the authentication middleware
 import { authentication } from '../middlewares/user.middleware.js';
 
+// Create a new router object
 const userRouter = express.Router();
 
 /**
@@ -34,6 +40,7 @@ const userRouter = express.Router();
  *       500:
  *         description: Error registering user
  */
+// Route for registering a new user
 userRouter.post('/register', register);
 
 /**
@@ -63,6 +70,7 @@ userRouter.post('/register', register);
  *       500:
  *         description: Error logging in user
  */
+// Route for logging in a user
 userRouter.post('/login', login);
 
 /**
@@ -75,6 +83,7 @@ userRouter.post('/login', login);
  *       200:
  *         description: User logged out successfully
  */
+// Route for logging out a user
 userRouter.post('/logout', logout);
 
 /**
@@ -98,6 +107,9 @@ userRouter.post('/logout', logout);
  *       500:
  *         description: Error deleting user
  */
+// Route for deleting a user by ID
+// Includes authentication middleware to ensure the user is authenticated
 userRouter.delete('/:id', authentication, deleteUser);
 
+// Export the router for use in other parts of the application
 export default userRouter;
