@@ -99,9 +99,106 @@ npm run dev
 
 **Github repo Link**: https://github.com/Shahnawaz1967/dailymotion-main.git
 
+# backend 
+
+This is a backend application for a dailyMotion project. The backend is built with Node.js, Express, and MongoDB.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [API Documentation](#api-documentation)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/jyotipatthak/flipkart-main1
+    cd flipkart-main1/backend
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Create a `.env` file in the root of the `backend` directory and add the following environment variables:
+
+  ```plaintext
+    PORT=8080
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    ```
+
+## Running the Application
+
+1. Start the server:
+
+    ```bash
+    npm run dev
+    ```
+
+## ✨` Backend Deployment`
+
+**Web Deployed Link**: https://dailymotion-main.onrender.com
+
+
+## API Documentation
+
+The API documentation is generated using Swagger. After starting the server, you can access the API documentation at:
+
+http://localhost:8080/api-docs
+
+## Project Structure
+
+```plaintext
+│
+├── Backend/
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── db.js
+│   │   ├── controllers/
+│   │   │   └── user.controller.js
+│   │   ├── middlewares/
+│   │   ├── models/
+│   │   │   └── user.model.js
+│   │   ├── routes/
+│   │   │   └── user.routes.js
+│   │   ├── utilities/
+│   ├── .gitignore
+│   ├── index.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── swagger.js
+│   ├── vercel.json
+
+## Contributing :
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## Description of Directories:
+
+config/: Contains the database configuration file.
+controllers/:
+  . user.controller.js: User-related operations.
+middlewares/:
+  . user.middleware.js: Middleware for user authentication.
+models/:
+  . user.model.js: User schema.
+routes/:
+  . user.routes.js: Routes for user operations.
+swagger.js: Contains the Swagger configuration for API documentation.
+index.js: Entry point of the application.
+
 ## 🎋 `Individual project`
 This project is created by
-- [@MD Shahnawaz Alam](https://github.com/Shahnawaz1967)
+- [@MD Shahnawaz Alam] (https://github.com/Shahnawaz1967/dailymotion-main.git)
 
 ##  📚`Feedback`
 
